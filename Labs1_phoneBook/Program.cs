@@ -28,7 +28,7 @@ namespace Labs1_phoneBook
                 {
                     if (key == "/help") { Help(); }
                     else if (key == "/create") { CreatePage(); }
-                    else if (key == "/showall") { ShowAll(); }
+                   // else if (key == "/showall") { ShowAll(); }
                     else if (key == "/showbook") { ShowBook(); }
                     else if (key == "/show") { ShowX(); }
                     else if (key == "/del") { Delete(); }
@@ -133,16 +133,17 @@ namespace Labs1_phoneBook
         }
         public static void Help()
         {
-            Console.WriteLine("Список доступных команд: \n/help - помощь \n/create - создать новую запись \n/showall - вывести весь список \n/show - вывести конкретную запись \n/del - удалить запись \n/update x - редактировать запись с id x \n/delete x - удалить запись с id x \n/find name - поиск в справочинике по имени \n/findN xxx - поиск в справочнике по телефону \n/exit - завершить работу со справочиником");
+            Console.WriteLine("Список доступных команд: \n/help - помощь \n/create - создать новую запись \n/show - вывести конкретную запись \n/del - удалить запись \n/update x - редактировать запись с id x \n/delete x - удалить запись с id x \n/findN xxx - поиск в справочнике по телефону \n/exit - завершить работу со справочиником");
         }
-        public static void ShowAll()
+       /* public static void ShowAll()
         {
             Console.WriteLine("***список будет здесь****");
             foreach (var item in phoneBook)
             {
                 Console.WriteLine(item);
             }
-        }
+        }*/
+
         public static void ShowBook()
         {
             foreach (var item in phoneBook)
